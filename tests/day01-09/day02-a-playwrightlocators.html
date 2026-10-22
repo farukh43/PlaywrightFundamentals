@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+  Playwright with TypeScript | Session 2: Playwright Built-In Locators
+  File : day02-playwrightlocators.html
+  Local practice page used by day02-get-by-title-and-test-id.spec.ts
+  Keep this file inside the tests/ folder, next to the spec files.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Playwright Locators Practice</title>
+</head>
+<body>
+  <h1>Playwright Locators Practice Page</h1>
+
+  <!-- getByTitle -->
+  <nav>
+    <a href="#" title="Home page link">Home</a>
+    <p>Learn <abbr title="HyperText Markup Language">HTML</abbr> basics.</p>
+  </nav>
+
+  <!-- getByTestId: data-testid (default) and data-pw (custom, configured) -->
+  <section>
+    <h2>User Profile</h2>
+    <div data-testid="profile-name" data-pw="profile-name">John Doe</div>
+    <div data-testid="profile-email" data-pw="profile-email">john.doe@example.com</div>
+  </section>
+</body>
+</html>
